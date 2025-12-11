@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>업무 효율화 도구 모음</title>
+
+  <link rel="icon" href="/static/favicon.ico" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="site-title-wrap">
+        <a href="/" class="site-title-link">
+          <span class="site-logo-badge">EDU</span>
+          <span class="site-title-text">교직원용 비공식 업무보조 페이지</span>
+        </a>
+      </div>
+
+      <nav class="site-nav" aria-label="주요 메뉴">
+        <a href="/" class="nav-link">홈</a>
+        <a href="/checklist/" class="nav-link">체크리스트</a>
+        <a href="/frequently-asked-questions/" class="nav-link">FAQ</a>
+        <a href="/tools/" class="nav-link nav-link-active">업무 도구 모음</a>
+        <a href="/engineer-notes-update/" class="nav-link">업무 능력 향상 노트</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <h1>업무 효율화 도구 모음</h1>
+    <p>
+      연차, 여비, 인건비, 퇴직연금 등 반복적인 계산을 줄이기 위한
+      개인용 계산기·검증기들을 모아 둔 페이지입니다.
+      각 도구의 세부 규칙은 실제 지침과 일치하도록 계속 보정해 나가는 것을
+      기본 전제로 합니다.
+    </p>
+
+    <section class="section-card-grid" aria-label="도구 목록">
+      <article class="section-card">
+        <h2 class="section-title">교육공무직 연차유급휴가 일수 계산기</h2>
+        <p class="section-desc">
+          직종, 상시근무 여부, 입사일 등을 입력하면 연차 부여일수를 계산하는 도구입니다.
+        </p>
+        <!-- 추후 실제 경로로 수정 -->
+        <a href="/tools/annual-leave/" class="btn-primary">바로가기</a>
+      </article>
+
+      <article class="section-card">
+        <h2 class="section-title">연차 미사용수당 계산기</h2>
+        <p class="section-desc">
+          미사용 연차 일수와 통상임금을 기준으로 미사용수당을 추정합니다.
+        </p>
+        <a href="/tools/unused-leave-pay/" class="btn-outline">바로가기</a>
+      </article>
+
+      <article class="section-card">
+        <h2 class="section-title">관내여비 지급내역 검증기</h2>
+        <p class="section-desc">
+          출장 내역 엑셀을 업로드해 여비 산정이 규정과 맞는지 검증하는 도구입니다.
+        </p>
+        <a href="/tools/travel-expense-validator/" class="btn-outline">바로가기</a>
+      </article>
+    </section>
+
+    <section class="author-note" aria-label="작성자 메모">
+      <h2 class="section-title">작성자 메모</h2>
+      <div data-author-note></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-text" data-global-footer></p>
+  </footer>
+
+  <script src="/static/site-common.js"></script>
+</body>
+</html>

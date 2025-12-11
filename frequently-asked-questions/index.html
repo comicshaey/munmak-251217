@@ -3,80 +3,78 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>자주 묻는 질문(FAQ) | eduworkhaey</title>
+  <title>자주 나오는 질문 정리 (FAQ)</title>
+
+  <link rel="icon" href="/static/favicon.ico" />
   <link rel="stylesheet" href="/static/style.css" />
-  <script defer src="/static/main.js"></script>
 </head>
 <body>
   <header class="site-header">
-    <div class="header-inner">
-      <div class="site-title-area">
-        <h1 class="site-title">교직원용 비공식 업무보조 페이지</h1>
-        <p class="site-subtitle">자주 묻는 질문(FAQ)</p>
+    <div class="site-header-inner">
+      <div class="site-title-wrap">
+        <a href="/" class="site-title-link">
+          <span class="site-logo-badge">EDU</span>
+          <span class="site-title-text">교직원용 비공식 업무보조 페이지</span>
+        </a>
       </div>
-      <nav class="site-nav">
-        <button class="nav-toggle" aria-label="메뉴 열기/닫기">메뉴</button>
-        <ul class="nav-list">
-          <li><a href="/">홈</a></li>
-          <li><a href="/guide/">업무 기본 안내</a></li>
-          <li><a href="/frequently-asked-questions/" class="is-active">FAQ</a></li>
-          <li><a href="/calendar/">연간 일정</a></li>
-          <li><a href="/contract/">공무직·늘봄</a></li>
-          <li><a href="/checklist/">체크리스트</a></li>
-          <li><a href="/forms/">서식 도움</a></li>
-        </ul>
+
+      <nav class="site-nav" aria-label="주요 메뉴">
+        <a href="/" class="nav-link">홈</a>
+        <a href="/checklist/" class="nav-link">체크리스트</a>
+        <a href="/frequently-asked-questions/" class="nav-link nav-link-active">FAQ</a>
+        <a href="/tools/" class="nav-link">업무 도구 모음</a>
+        <a href="/engineer-notes-update/" class="nav-link">업무 능력 향상 노트</a>
       </nav>
     </div>
   </header>
 
-  <main class="page-main">
-    <section class="card">
-      <h2>여비·출장 관련</h2>
+  <main class="page-wrap">
+    <h1>자주 나오는 질문 정리 (FAQ)</h1>
+    <p>
+      교직원과 행정실 사이에서 반복해서 나오는 질문들을 정리해 둔 페이지입니다.
+      실제 답변은 각 시점의 지침, 공문, 단체협약, 나이스 매뉴얼 등을
+      반드시 다시 한 번 확인한 뒤 안내하는 것을 권장합니다.
+    </p>
 
-      <article class="faq-item">
-        <h3 class="faq-q">Q. 연수나 출장을 갈 때, 여비 관련해서 무엇을 먼저 해야 하나요?</h3>
-        <p class="faq-a">
-          원칙적으로 <strong>사전에 출장(연수) 승인 및 여비 관련 내용을 행정실과 협의</strong>해 주셔야 합니다.
-          일정, 장소, 기간, 주최 기관, 예산(또는 사업명) 정보를 미리 알려주시면 처리 속도가 빨라집니다.
-        </p>
-        <p class="faq-tip">
-          ※ “다녀온 뒤에 여비 신청하려고 합니다” 방식은 가급적 피해주세요.
-        </p>
-      </article>
+    <section>
+      <h2>근무·연차 관련 질문</h2>
+      <dl>
+        <dt>Q. 연차는 몇 일부터 하루 연차로 계산되나요?</dt>
+        <dd>
+          A. 보통 4시간 이상 근무를 기준으로 반일/전일로 나누어 처리하며,
+          구체적인 기준은 단체협약 및 인사 지침을 확인해야 합니다.
+        </dd>
 
-      <!-- 여기 아래로 항목 계속 추가 -->
+        <dt>Q. 병가 사용 시 연차와 어떤 차이가 있나요?</dt>
+        <dd>
+          A. 병가는 의료기관 진단서 등 근거서류를 전제로 하는 복무 유형이고,
+          연차는 부여된 유급휴가 범위 내에서 자유롭게 사용하는 휴가입니다.
+        </dd>
+      </dl>
     </section>
 
-    <section class="card">
-      <h2>계약·강사비 관련</h2>
-
-      <article class="faq-item">
-        <h3 class="faq-q">Q. 외부 강사를 모실 때, 언제 행정실에 이야기해야 하나요?</h3>
-        <p class="faq-a">
-          강사 섭외를 확정하기 전 또는 최소한 일정·횟수·시수·예산 범위가 정해진 시점에
-          <strong>행정실과 계약 방식 및 예산 사용 가능 여부를 먼저 상의</strong>해 주세요.
-        </p>
-      </article>
+    <section>
+      <h2>여비·출장 관련 질문</h2>
+      <dl>
+        <dt>Q. 관내 출장 시에도 여비가 지급되나요?</dt>
+        <dd>
+          A. 예·아니오 여부와 지급 기준은 해당 연도 여비 지침과
+          교육청·학교 규정에 따르며, 실제 지급 시 나이스 여비 모듈 기준을
+          함께 확인해야 합니다.
+        </dd>
+      </dl>
     </section>
 
-    <section class="card dev-note is-hidden">
-      <h2>작성자 메모(내부용)</h2>
-      <p>각 FAQ 항목이 어떤 질문에서 파생됐는지 한 줄씩 기록해 두면 나중에 정리하기 좋음.</p>
+    <section class="author-note" aria-label="작성자 메모">
+      <h2 class="section-title">작성자 메모</h2>
+      <div data-author-note></div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="footer-inner">
-      <p class="footer-main">
-        본 페이지는 편의를 위한 비공식 안내 자료이며, 실제 업무 처리 전에는 반드시 관련 규정과 행정실 담당자와의 최종 확인이 필요합니다.
-      </p>
-      <p class="footer-meta">
-        &copy; eduworkhaey · FAQ
-      </p>
-      <button class="dev-note-toggle" type="button">
-        작성자 메모 보기/숨기기
-      </button>
-    </div>
+    <p class="footer-text" data-global-footer></p>
   </footer>
+
+  <script src="/static/site-common.js"></script>
 </body>
 </html>
